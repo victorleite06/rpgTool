@@ -1,0 +1,12 @@
+.menuBotao {
+    margin-right: 5px;
+}
+
+div {
+    background-color: rgba(12, 0, 78, 0.733);
+    height: 100%;
+}
+
+mat-toolbar {
+    text-align: center;
+}

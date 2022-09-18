@@ -1,0 +1,23 @@
+<mat-table [dataSource]="rpgs">
+
+  <!-- Nome Coluna -->
+  <ng-container matColumnDef="nome">
+    <mat-header-cell *matHeaderCellDef> Rpg </mat-header-cell>
+    <mat-cell *matCellDef="let rpg"> {{ rpg.name }} </mat-cell>
+  </ng-container>
+  
+  <!-- Ação Coluna -->
+  <ng-container matColumnDef="actions">
+
+    <mat-header-cell *matCellDef="let rpg" class="action-column">
+      <button mat-mini-fab color="primary" aria-label="Abrir RPG" class="button">
+        <mat-icon (click)="open(rpg)">check_circle</mat-icon>
+      </button>
+    </mat-header-cell>
+
+  </ng-container>
+  
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table>
