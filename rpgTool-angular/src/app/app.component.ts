@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rpgTool-angular';
+  showFiller = false
+
+  onRPG(){
+
+  }
+
+  onPerfil(){
+
+  }
+
+  onConfig(){
+
+  }
+
+  onLogout(){
+
+  }
 }

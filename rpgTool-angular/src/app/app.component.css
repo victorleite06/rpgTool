@@ -1,12 +1,76 @@
 .menuBotao {
-    margin-right: 5px;
+    margin-right: 10px;
+    color: whitesmoke;
 }
 
-div {
-    background-color: rgba(12, 0, 78, 0.733);
-    height: 100%;
+.Config {
+  color: whitesmoke;
+  background-color: rgb(75, 0, 75);
+  border: none;
+  margin-left: 76%;
+  box-shadow: none;
+  position: absolute;
+}
+
+.Perfil {
+  color: whitesmoke;
+  background-color: rgb(75, 0, 75);
+  border: none;
+  margin-left: 83%;
+  box-shadow: none;
+  position: absolute;
+}
+
+.Logout {
+  color: whitesmoke;
+  background-color: rgb(75, 0, 75);
+  border: none;
+  margin-left: 90%;
+  box-shadow: none;
+  position: absolute;
 }
 
 mat-toolbar {
     text-align: center;
+    display: inline-flex;
+    border-bottom: solid 1px rgba(94, 0, 156, 0.726);
 }
+
+.menuLateral {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 0, 187, 0.904);
+}
+
+.container-menuLateral {
+  padding-top: 100px;
+  text-align: center;
+  width: 13%;
+  background-color: rgb(75, 0, 75);
+  border: none;
+}
+
+h3{
+  margin-top: 5px;
+}
+
+.botaosMenuLateral {
+  margin-top: -25px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  background-color: rgb(75, 0, 75);
+}
+
+mat-divider{
+  background-color: rgb(106, 0, 133);
+}
+
+mat-drawer{
+  color: whitesmoke;
+}
+
+span{
+  text-decoration: whitesmoke;
+  margin-left: 3px;
+}
+

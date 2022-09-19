@@ -1,10 +1,42 @@
-<div>
-    <mat-toolbar style="background-color: rgb(75, 0, 75); color: white;">
-      <button mat-icon-button class="menuBotao" aria-label="Botao de menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>RPG TOOL</span>
-    </mat-toolbar>
+<mat-drawer-container class="menuLateral" autosize>
 
-    <router-outlet></router-outlet>
-</div>
+  <mat-drawer #drawer class="container-menuLateral" mode="side">
+
+    <h3>RPGs</h3>
+    <button mat-icon-button class="botaosMenuLateral" (click)="onRPG()">
+      <mat-icon>sports_esports</mat-icon>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <h3>Outro</h3>
+    <button mat-icon-button class="botaosMenuLateral" (click)="onRPG()">
+      <mat-icon>sports_esports</mat-icon>
+    </button>
+
+  </mat-drawer>
+
+  <mat-toolbar style="background-color: rgb(75, 0, 75); color: whitesmoke;">
+    <button type="button" mat-icon-button class="menuBotao" aria-label="Botao de menu" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span>RPG TOOL</span>
+
+    <button type="button" mat-icon-button class="Config" aria-label="Botao de configurações" (click)="onConfig()" mat-raised-button>
+      <mat-icon>settings</mat-icon>
+    </button>
+
+    <button type="button" mat-icon-button class="Perfil" aria-label="Botao de perfil" (click)="onPerfil()" mat-raised-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <button type="button" mat-icon-button class="Logout" aria-label="Botao de menu" (click)="onLogout()" mat-raised-button>
+      <mat-icon>logout</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+</mat-drawer-container>
+
+<router-outlet></router-outlet>
