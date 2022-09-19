@@ -24,4 +24,20 @@ export class AppComponent {
   onLogout(){
 
   }
+
+  onFichas(){
+
+  }
+
+  onDados(){
+
+  }
+
+  onAmigos(){
+
+  }
+
+  onRate(){
+
+  }
 }
