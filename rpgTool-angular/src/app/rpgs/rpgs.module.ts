@@ -13,7 +13,6 @@ import { RpgsRoutingModule } from './rpgs-routing.module';
 @NgModule({
   declarations: [
     RpgComponent,
-    RpgComponent,
     RpgsListComponent
   ],
   imports: [
