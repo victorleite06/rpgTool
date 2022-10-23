@@ -5,7 +5,7 @@ import { RpgComponent } from './containers/rpg/rpg.component';
 
 
 const routes: Routes = [
-  { path: '', component: RpgComponent }
+  { path: '', component: RpgComponent },
 ];
 
 @NgModule({

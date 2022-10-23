@@ -25,7 +25,7 @@ public class RpgToolApplication {
 			Rpg r = new Rpg();
 			r.setName("Dangeon & Dragons");
 
-			rpgRepository.save(r);
+			rpgRepository.saveAndFlush(r);
 		};
 	}
 
