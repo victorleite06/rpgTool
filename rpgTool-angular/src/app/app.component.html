@@ -2,59 +2,56 @@
 
   <mat-drawer #drawer class="container-menuLateral" mode="side">
 
-    <h3>RPGs</h3>
-    <button mat-icon-button class="botaosMenuLateral" (click)="onRPG()">
+    <button mat-icon-button matTooltip="RPGs" class="botaosMenuLateral" (click)="onRPG()">
       <mat-icon>sports_esports</mat-icon>
     </button>
 
     <mat-divider></mat-divider>
 
-    <h3>Fichas</h3>
-    <button mat-icon-button class="botaosMenuLateral" (click)="onFichas()">
+    <button mat-icon-button matTooltip="Fichas" class="botaosMenuLateral" (click)="onFichas()">
       <mat-icon>account_box</mat-icon>
     </button>
 
     <mat-divider></mat-divider>
 
-    <h3>Dados</h3>
-    <button mat-icon-button class="botaosMenuLateral" (click)="onDados()">
+    <button mat-icon-button matTooltip="Dados" class="botaosMenuLateral" (click)="onDados()">
       <mat-icon>analytics</mat-icon>
     </button>
 
     <mat-divider></mat-divider>
 
-    <h3>Amigos</h3>
-    <button mat-icon-button class="botaosMenuLateral" (click)="onAmigos()">
+    <button mat-icon-button matTooltip="Amigos" class="botaosMenuLateral" (click)="onAmigos()">
       <mat-icon>group</mat-icon>
     </button>
 
     <mat-divider></mat-divider>
 
-    <h3>Avaliação</h3>
-    <button mat-icon-button class="botaosMenuLateral" (click)="onRate()">
+    <button mat-icon-button matTooltip="Avaliação" class="botaosMenuLateral" (click)="onRate()">
       <mat-icon>star_rate_half</mat-icon>
     </button>
 
   </mat-drawer>
 
-  <mat-toolbar style="background-color: rgb(75, 0, 75); color: whitesmoke;">
+  <mat-toolbar style="background-color: rgb(75, 0, 75); color: whitesmoke; width: 100%;">
     <button type="button" mat-icon-button class="menuBotao" aria-label="Botao de menu" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
 
     <span>RPG TOOL</span>
 
-    <button type="button" mat-icon-button class="Config" aria-label="Botao de configurações" (click)="onConfig()" mat-raised-button>
-      <mat-icon>settings</mat-icon>
-    </button>
-
-    <button type="button" mat-icon-button class="Perfil" aria-label="Botao de perfil" (click)="onPerfil()" mat-raised-button>
-      <mat-icon>account_circle</mat-icon>
-    </button>
-
-    <button type="button" mat-icon-button class="Logout" aria-label="Botao de menu" (click)="onLogout()" mat-raised-button>
-      <mat-icon>logout</mat-icon>
-    </button>
+    <div style="position: relative; left: 80%; width: 100px;">
+      <button type="button" mat-icon-button class="botoes" aria-label="Botao de configurações" (click)="onConfig()" mat-raised-button>
+        <mat-icon>settings</mat-icon>
+      </button>
+  
+      <button type="button" mat-icon-button class="botoes" aria-label="Botao de perfil" (click)="onPerfil()" mat-raised-button>
+        <mat-icon>account_circle</mat-icon>
+      </button>
+  
+      <button type="button" mat-icon-button class="botoes" aria-label="Botao de menu" (click)="onLogout()" mat-raised-button>
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
 
   </mat-toolbar>
 
